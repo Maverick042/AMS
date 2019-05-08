@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <title>dreams Website Template | Home :: w3layouts</title>
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+         <!-- Custom Theme files -->
+         <!---- animated-css ---->
+        <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+        <script src="js/wow.min.js"></script>
+        <script>
+         new WOW().init();
+        </script>
+        <!---- animated-css ---->
+          <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){     
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+            });
+        </script>
+         <!---- start-smoth-scrolling---->
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+         <!-- Custom Theme files -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        </script>
+        <!----webfonts--->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <!---//webfonts--->
+        <!----start-top-nav-script---->
+        <script>
+            $(function() {
+                var pull        = $('#pull');
+                    menu        = $('nav ul');
+                    menuHeight  = menu.height();
+                $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+                $(window).resize(function(){
+                    var w = $(window).width();
+                    if(w > 320 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+        </script>
+        <!----//End-top-nav-script---->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" id="new">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">A M S</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href="portfolio-2-col.html">DESTINATION</a>
+                    </li>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">BOOKING<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="makeabooking.html">Book A Flight</a>
+                            </li>
+                            <li>
+                                <a href="timetable.html">Time Table</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">OTHERS <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-2.html">Special Offers</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Career</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="navbar" class="navbar-collapse collapse">
+
+                            <form class="navbar-form navbar-right">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" placeholder="Password" class="form-control">
+                                </div>
+                                <button type="submit" class="btn btn-success" click="signInClicked()">Sign in</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="signup.html">SIGN UP</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- Page Content -->
+
+        
+
+        <!-- Team Members -->
+        <div id="team" class="team-members">
+                    <div class="wrap"> 
+                        <div class="tm-head">
+                            <h3>our amazing team</h3>
+                            
+                        </div>
+                        <div class="tm-head-grids">
+                            <div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+                                <img src="images/trc1.jpg" alt="">
+                                <h4>TAWSIF R CHOUDHURY</h4>
+                                <h5>Coder</h5>
+                                <ul class="top-social-icons">
+                                    <li><a class="twitter" href="#"> </a></li>
+                                    <li><a class="facebook" href="#"> </a></li>
+                                    <li><a class="pin" href="#"> </a></li>
+                                    <div class="clear"> </div>
+                                </ul>
+                            </div>
+                            <div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
+                                <img src="images/don1.jpg" alt="">
+                                <h4>NAFIS IMTIAZ AHMED</h4>
+                                <h5>DEVELOPER</h5>
+                                <ul class="top-social-icons">
+                                    <li><a class="twitter" href="#"> </a></li>
+                                    <li><a class="facebook" href="#"> </a></li>
+                                    <li><a class="pin" href="#"> </a></li>
+                                    <div class="clear"> </div>
+                                </ul>
+                            </div>
+                            <div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
+                                <img src="images/asif1.jpg" alt="">
+                                <h4>ASIF SAZED</h4>
+                                <h5>SOFTWARE ENGINEER</h5>
+                                <ul class="top-social-icons">
+                                    <li><a class="twitter" href="#"> </a></li>
+                                    <li><a class="facebook" href="#"> </a></li>
+                                    <li><a class="pin" href="#"> </a></li>
+                                    <div class="clear"> </div>
+                                </ul>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+        <!-- /.row -->
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; AMS 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
